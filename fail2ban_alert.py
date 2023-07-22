@@ -3,11 +3,9 @@
 
 """
 
- This script is used to send Telegram notifications
- along with IP details when certain Fail2Ban rules
- are triggered
+Script này được sử dụng để gửi thông báo Telegram cùng với chi tiết IP khi một số quy tắc Fail2Ban nhất định được kích hoạt
 
- Author: Matei Ciobotaru
+ Author: Creyt
 
 """
 
@@ -19,11 +17,11 @@ from telegram.bot import Bot
 from telegram.error import TelegramError
 
 
-# Telegram bot information
+# Thông tin bot Telegram
 BOT_TOKEN = 'YOUR_SECRET_BOT_TOKEN'
 CHAT_ID = 'YOUR_SECRET_CHAT_ID'
 
-# Enable logging
+#Bật ghi nhật ký
 LOG_FILE = '/var/log/fail2ban.log'
 
 # Match Fail2Ban logging format
